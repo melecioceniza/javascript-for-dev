@@ -17,6 +17,19 @@ function handleGreeting() {
     }
 }
 
+// 2. Listen for the 'input' event on the text box
+nameInputField.addEventListener('input', () => {
+    // 3. Grab whatever text is currently inside the box
+    const currentText = nameInputField.value;
+
+    // 4. Update the heading live based on the text length
+    if (currentText.trim() !== "") {
+        headingElement.innerText = "Hello, " + currentText + "!";
+    } else {
+        headingElement.innerText = "Welcome to JavaScript!";
+    }
+});
+
 // Attached the function to the button click event
  submitBtn.addEventListener('click', handleGreeting)
 
