@@ -2,6 +2,7 @@
 const nameInput = document.getElementById('nameInput');
 const addButton = document.getElementById('addBtn');
 const visitorListUI = document.getElementById('visitorList');
+const visitorCountUI = document.getElementById('visitorCount') // New element!
 
 // 2. Create an empty Array to store our list of names
 const visitors = [];
@@ -22,6 +23,8 @@ function addVisitor() {
 }
 // Function to display the array items along with a delete button
 function renderList() {
+    // Update the counter text using the array's built-in .length property
+    visitorCountUI.innerText = visitors.length;
     // Clear the old visual list so we don't get duplicates
     visitorListUI.innerHTML = "";
 
