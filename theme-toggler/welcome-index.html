@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Visitor Log</title>
-        <!-- <style>
+        <title>Front End App</title>
+        <style>
             body{
                 font-family: sans-serif;
                 display: flex;
@@ -17,23 +17,19 @@
                 font-size: 16px;
                 cursor: pointer;
             }
-        </style> -->
+        </style>
     </head>
     <body>
-        <h1>Visitor Log Book</h1>
+        <h1 id="welcomeHeading">Welcome Rangiora Bakery</h1>
         <!-- <button id="colorBtn">Change Background</button> -->
 
-        <input type="text" id="nameInput" placeholder="Enter Visitor name...">
+        <input type="text" id="nameInput" placeholder="Enter your name...">
 
         <!-- Button to trigger the update-->
-         <button id="addBtn">Add Visitor</button>
-
-        <!-- This empty list is where our JavaScript will inject the names -->
-        <ul id="visitorList"></ul>
-
+         <button id="submitBtn">Greet Me</button>
 
         <!-- Inseert you JavaScript file here-->
-        <script src="array-scripts.js"></script>
-
+        <script src="welcome-script.js"></script>
+         <script src="keydown-scripts.js"></script>
     </body>
 </html>
